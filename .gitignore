@@ -1,0 +1,8 @@
+*
+!.gitconfig
+!.gitignore
+!scripts/
+!scripts/**
+!.config/
+!.config/systemd
+!.config/systemd/**
