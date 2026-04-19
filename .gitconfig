@@ -1,0 +1,10 @@
+[user]
+	signingkey = "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIHlzHOOfZY7mZFoEKS+e9Wg1Ks8UC1/ezFaL6eyAhstl swarnavaghosh04@gmail.com" 
+	name = Swarnava Ghosh
+	email = swarnavaghosh04@gmail.com
+[gpg]
+	format = ssh
+[commit]
+	gpgsign = true
+[core]
+	editor = vim
