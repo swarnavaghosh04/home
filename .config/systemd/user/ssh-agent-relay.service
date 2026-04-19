@@ -1,0 +1,18 @@
+# credit: https://www.rebelpeon.com/bitwarden-ssh-agent-on-wsl2/
+
+# setup windows:
+#   winget install albertony.npiperelay
+# setup linux:
+#   sudo apt install socat
+
+[Unit]
+Description=SSH Agent Relay (npiperelay + socat)
+
+[Service]
+ExecStart=/usr/bin/socat UNIX-LISTEN:%h/.ssh/agent.sock,fork EXEC:"/mnt/c/Users/swarn/AppData/Local/Microsoft/WinGet/Packages/albertony.npiperelay_Microsoft.Winget.Source_8wekyb3d8bbwe/npiperelay.exe -ei -s //./pipe/openssh-ssh-agent",nofork
+Restart=always
+RestartSec=2
+
+[Install]
+WantedBy=default.target
+
