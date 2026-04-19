@@ -1,6 +1,8 @@
 *
 !.gitconfig
 !.gitignore
+!.vimrc
+!.tmux.conf
 !scripts/
 !scripts/**
 !.config/
